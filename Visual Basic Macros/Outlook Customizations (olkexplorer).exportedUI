@@ -1,0 +1,26 @@
+<mso:cmd app="olkexplorer" dt="1" />
+	<mso:customUI xmlns:x1="http://schemas.microsoft.com/office/2009/07/customui/macro" xmlns:mso="http://schemas.microsoft.com/office/2009/07/customui">
+		<mso:ribbon>
+			<mso:qat/>
+			<mso:tabs>
+				<mso:tab idQ="mso:TabCalendarTableView">
+					<mso:group id="mso_c1.A64CEA" label="Current View" insertBeforeQ="mso:GroupCalendarNew" autoScale="true">
+						<mso:gallery idQ="mso:CurrentViewGallery" showInRibbon="false" visible="true"/>
+						<mso:button idQ="x1:Project1.CountTime_0_1AE413C" label="Count Time" imageMso="FilterByResource" onAction="Project1.CountTime" visible="true"/>
+					</mso:group>
+				</mso:tab>
+				<mso:tab idQ="mso:TabCalendar">
+					<mso:group id="mso_c2.A716FC" label="Current view" insertBeforeQ="mso:GroupCalendarNew" autoScale="true">
+						<mso:gallery idQ="mso:CurrentViewGallery" showInRibbon="false" visible="true"/>
+						<mso:button idQ="x1:Project1.CountTime_1_1AE414C" label="Count Time" imageMso="FilterByResource" onAction="Project1.CountTime" visible="true"/>
+						<mso:button idQ="x1:OutlookBilling.ListTasks_0_142879C" label="ListTasks" imageMso="DollarSign" onAction="OutlookBilling.ListTasks" visible="true"/>
+						<mso:dropDown idQ="x1:OutlookBilling.MyDropDownList" onAction="OutlookBilling.DropDownAction" imageMso="DollarSign" label="Bill" visible="true">
+							<mso:item id="Item1" label="November" visible="true" />
+							<mso:item id="Item2" label="December" visible="true" />
+							<mso:item id="Item3" label="January" visible="true" />
+						</mso:dropDown>
+					</mso:group>
+				</mso:tab>
+			</mso:tabs>
+		</mso:ribbon>
+	</mso:customUI>

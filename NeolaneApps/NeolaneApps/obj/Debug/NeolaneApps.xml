@@ -1,0 +1,122 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NeolaneApps
+</name>
+</assembly>
+<members>
+<member name="M:NeolaneApps.NeolaneBillingAddin.#ctor(Microsoft.Office.Tools.Outlook.Factory,System.IServiceProvider)">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.Initialize">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.FinishInitialization">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.InitializeDataBindings">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.InitializeCachedData">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.InitializeData">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.BindToData">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.StartCaching(System.String)">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.StopCaching(System.String)">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.IsCached(System.String)">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.BeginInitialization">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.EndInitialization">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.InitializeControls">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.InitializeComponents">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.NeedsFill(System.String)">
+</member><member name="M:NeolaneApps.NeolaneBillingAddin.OnShutdown">
+</member><member name="T:NeolaneApps.NeolaneBillingAddin">
+</member><member name="M:NeolaneApps.Globals.#ctor">
+</member><member name="T:NeolaneApps.Globals">
+</member><member name="M:NeolaneApps.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+</member><member name="T:NeolaneApps.ThisRibbonCollection">
+</member><member name="M:NeolaneApps.ThisFormRegionCollection.#ctor(System.Collections.Generic.IList{Microsoft.Office.Tools.Outlook.IFormRegion})">
+</member><member name="T:NeolaneApps.ThisFormRegionCollection">
+</member><member name="M:NeolaneApps.WindowFormRegionCollection.#ctor(System.Collections.Generic.IList{Microsoft.Office.Tools.Outlook.IFormRegion})">
+</member><member name="T:NeolaneApps.WindowFormRegionCollection">
+</member><member name="P:NeolaneApps.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:NeolaneApps.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:NeolaneApps.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:NeolaneApps.NeolaneRibbon.GetBillingPeriodsFromXML">
+	<summary>
+ Read XML document and parse billing dates to create billing periods.
+ </summary>
+	<returns>An array of the billing periods.</returns>
+	<remarks></remarks>
+</member><member name="M:NeolaneApps.NeolaneRibbon.CreateRibbonDropDownItem">
+	<summary>
+ Creates a a ribbon dropdown item.
+ </summary>
+	<returns>A ribbon dropdown item.</returns>
+	<remarks></remarks>
+</member><member name="M:NeolaneApps.NeolaneRibbon.GenerateBillingPeriodsDropDownList">
+	<summary>
+ Generates the dropdown list with all billing periods.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:NeolaneApps.NeolaneRibbon.NeolaneRibbon_Load(System.Object,Microsoft.Office.Tools.Ribbon.RibbonUIEventArgs)">
+	<summary>
+ Actions to run when loading ribbon.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:NeolaneApps.NeolaneRibbon.GetBillingPeriod(System.DateTime)">
+	<summary>
+ Gets the billing period that surrounds a given date.
+ </summary>
+	<param name="datInputDate">Date from which lookup the billing period.</param>
+	<returns>A billing period.</returns>
+	<remarks></remarks>
+</member><member name="M:NeolaneApps.NeolaneRibbon.LaunchBillingPeriodCurrentMonthButton_Click(System.Object,Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs)">
+	<summary>
+ Launches the export of task list within period defined by current date.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>Not working, fixed dates instead.</remarks>
+</member><member name="M:NeolaneApps.NeolaneRibbon.LaunchBillingPeriodCustomPeriodButton_Click(System.Object,Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs)">
+	<summary>
+ Launches the export of task list within period defined by manual input.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:NeolaneApps.NeolaneRibbon.LaunchBillingPeriodSelectedMonthButton_Click(System.Object,Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs)">
+	<summary>
+ Launches the export of task list within period defined by selection in NeolaneMonthDropDown.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:NeolaneApps.nlBillingFunctions.GetInvoicingStatus(Microsoft.Office.Interop.Outlook.AppointmentItem)">
+	<summary>
+ Returns the invoicing status of a task.
+ </summary>
+	<param name="objInputAppointment">Outlook task.</param>
+	<returns>A string containing the invoice status.</returns>
+	<remarks></remarks>
+</member><member name="M:NeolaneApps.nlBillingFunctions.GetBusyStatus(System.Int32)">
+	<summary>
+ Returns the busy status text of a task.
+ </summary>
+	<param name="intInputBusyStatus">Outlook-based value for task status.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:NeolaneApps.nlBillingFunctions.ListTasks(System.DateTime,System.DateTime)">
+	<summary>
+ Procedure to list all Outlook tasks between two dates.
+ </summary>
+	<param name="inputDatStart">Date on or after listing should be done.</param>
+	<param name="inputDatEnd">Date on or before listing should be done.</param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

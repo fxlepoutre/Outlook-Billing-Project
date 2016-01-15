@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<nlBillingDates>
+  <nlBillingDate position="1" label="January 2011" date="25/01/2011"/>
+  <nlBillingDate position="2" label="February 2011" date="25/02/2011"/>
+  <nlBillingDate position="3" label="March 2011" date="25/03/2011"/>
+  <nlBillingDate position="4" label="April 2011" date="25/04/2011"/>
+  <nlBillingDate position="5" label="May 2011" date="25/05/2011"/>
+  <nlBillingDate position="6" label="June 2011" date="25/06/2011"/>
+  <nlBillingDate position="7" label="July 2011" date="25/07/2011"/>
+  <nlBillingDate position="8" label="August 2011" date="25/08/2011"/>
+  <nlBillingDate position="9" label="September 2011" date="23/09/2011"/>
+  <nlBillingDate position="10" label="October 2011" date="21/10/2011"/>
+  <nlBillingDate position="11" label="November 2011" date="25/11/2011"/>
+  <nlBillingDate position="12" label="December 2011" date="23/12/2011"/>
+  <nlBillingDate position="13" label="January 2012" date="20/01/2012"/>
+  <nlBillingDate position="14" label="February 2012" date="24/02/2012"/>
+</nlBillingDates>

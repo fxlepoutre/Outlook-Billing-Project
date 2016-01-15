@@ -1,0 +1,17 @@
+<cmd app="olkexplorer" dt="1" />
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+	<ribbon>
+		<tabs>
+			<tab id="MyTab" label="Billing">
+				<group id="Billing" label="Billing" autoScale="true">
+					<button id="MyButton" label="Bill1" onAction="OutlookBilling.DropDownAction" imageMso="DollarSign" />
+					<comboBox id="MyDropDownList" label="Bill" size="large" onChange="OutlookBilling.DropDownAction" imageMso="DollarSign" >
+						<item id="Item1" label="November" />
+						<item id="Item2" label="December" />
+						<item id="Item3" label="January" />
+					</comboBox>
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
